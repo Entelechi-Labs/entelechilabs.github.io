@@ -11,6 +11,7 @@
         body {
             background-color: #000000;
             color: #c9d1d9;
+            scroll-behavior: smooth;
         }
 
         .font-serif-custom {
@@ -23,48 +24,71 @@
     </style>
 </head>
 <body class="font-sans-custom antialiased">
-    <div class="max-w-screen-md mx-auto min-h-screen p-8 flex flex-col justify-between">
-        
-        <div class="flex flex-col gap-12">
-            <div class="flex justify-between items-start text-sm">
-                <div class="flex items-center space-x-2">
-                    <img src="logo.jpg" alt="Entelechi Labs Logo" class="h-8 w-8 object-contain">
-                    <div>Entelechi Labs</div>
+
+    <header class="max-w-screen-md mx-auto p-8 pt-12 flex justify-between items-start text-sm sticky top-0 bg-black z-50">
+        <div class="flex items-center space-x-2">
+            <img src="logo.jpg" alt="Entelechi Labs Logo" class="h-8 w-8 object-contain">
+            <div>Entelechi Labs</div>
+        </div>
+        <nav class="hidden sm:block">
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-white transition-colors duration-200">About</a></li>
+                <li><a href="#services" class="hover:text-white transition-colors duration-200">Services</a></li>
+                <li><a href="mailto:contact@entelechilabs.com" class="hover:text-white transition-colors duration-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="max-w-screen-md mx-auto p-8 flex flex-col gap-16">
+        <div class="h-px w-full bg-gray-800"></div>
+
+        <section class="min-h-screen flex flex-col justify-center items-center text-center">
+            <div class="flex flex-col gap-4">
+                <h1 class="font-serif-custom text-4xl sm:text-5xl text-white leading-tight">
+                    Engineering intelligence at the intersection of biology and computation.
+                </h1>
+                <div class="text-xl text-gray-400">
+                    We are an applied biological intelligence company.
                 </div>
-                <nav class="hidden sm:block">
-                    <ul class="flex space-x-6">
-                        </ul>
-                </nav>
             </div>
             
+            <a href="mailto:contact@entelechilabs.com" class="mt-8 px-6 py-3 border border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200">
+                Get in Touch
+            </a>
+        </section>
+
+        <section id="about" class="flex flex-col gap-8 py-24">
+            <h2 class="font-serif-custom text-3xl text-white">About Us</h2>
             <div class="h-px w-full bg-gray-800"></div>
-
-            <div class="flex flex-col gap-12 text-sm">
-                
-                <div class="flex flex-col gap-4">
-                    <h1 class="font-serif-custom text-4xl sm:text-5xl text-white leading-tight">
-                        Engineering intelligence at the intersection of biology and computation.
-                    </h1>
-                    <div class="flex flex-col gap-4 text-gray-400">
-                        <div class="text-xl">We are an applied biological intelligence company.</div>
-                    </div>
-                </div>
-
-                </div>
-        </div>
-
-        <div class="flex flex-col gap-4 text-sm mt-auto">
-            <div class="h-px w-full bg-gray-800"></div>
-            <div class="flex justify-between items-start text-gray-500">
-                <div class="flex items-center gap-2">
-                    <div class="hidden sm:block">New York</div>
-                    <div class="block sm:hidden">NYC</div>
-                </div>
-                <a href="mailto:contact@entelechilabs.com" class="inline-block text-blue-400 hover:text-blue-300 transition-colors duration-200">contact@entelechilabs.com</a>
-                <div>&copy; 2025 Entelechi Labs.</div>
+            <div class="text-gray-400 text-lg">
+                <p class="mb-4">
+                    At Entelechi Labs, we believe the full potential of life sciences can only be unlocked by combining the power of machine learning with a deep understanding of biological systems. Our name, Entelechi, is a philosophical term for the complete realization of a thing's potential, a principle that guides all our work.
+                </p>
+                <p>
+                    We are a team of passionate scientists and engineers dedicated to transforming complex biological data into actionable insights for the future of medicine and research.
+                </p>
             </div>
-        </div>
+        </section>
 
+        <section id="services" class="flex flex-col gap-8 py-24">
+            <h2 class="font-serif-custom text-3xl text-white">Our Services</h2>
+            <div class="h-px w-full bg-gray-800"></div>
+            <div class="text-gray-400 text-lg">
+                <p class="mb-4">
+                    We specialize in developing sophisticated algorithms and computational models to tackle some of the most challenging problems in genomics and epigenetics. 
+            </div>
+        </section>
     </div>
+
+    <div class="max-w-screen-md mx-auto p-8 pt-12 flex flex-col gap-4 text-sm mt-auto">
+        <div class="h-px w-full bg-gray-800"></div>
+        <div class="flex justify-between items-start text-gray-500">
+            <div class="flex items-center gap-2">
+                <div>New York</div>
+            </div>
+            <div>&copy; 2025 Entelechi Labs.</div>
+        </div>
+    </div>
+
 </body>
 </html>
