@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entelechi Labs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            background-color: #000000;
+            color: #c9d1d9;
+        }
+
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-sans-custom {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-sans-custom antialiased">
+    <div class="max-w-screen-md mx-auto min-h-screen p-8 flex flex-col justify-between">
+        
+        <!-- Top Section -->
+        <div class="flex flex-col gap-12">
+            <div class="flex justify-between items-start text-sm">
+                <div class="flex items-center space-x-2">
+                    <!-- Placeholder for your logo -->
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">EL</div>
+                    <div>Entelechi Labs</div>
+                </div>
+                <nav class="hidden sm:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="mailto:contact@entelechilabs.com" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="h-px w-full bg-gray-800"></div>
+
+            <!-- Main Content Area -->
+            <div class="flex flex-col gap-12 text-sm">
+                
+                <div class="flex flex-col gap-4">
+                    <h1 class="font-serif-custom text-4xl sm:text-5xl text-white leading-tight">
+                        Engineering intelligence at the intersection of biology and computation.
+                    </h1>
+                    <div class="flex flex-col gap-4 text-gray-400">
+                        <div class="text-xl">We are an applied biological intelligence company.</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="text-gray-400">
+                        <div class="mt-4"><a href="mailto:contact@entelechilabs.com" class="inline-block text-blue-400 hover:text-blue-300 transition-colors duration-200">contact@entelechilabs.com</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-col gap-4 text-sm mt-auto">
+            <div class="h-px w-full bg-gray-800"></div>
+            <div class="flex justify-between items-start text-gray-500">
+                <div class="flex items-center gap-2">
+                    <div class="hidden sm:block">New York</div>
+                    <div class="block sm:hidden">NYC</div>
+                </div>
+                <div>&copy; 2025 Entelechi Labs.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
