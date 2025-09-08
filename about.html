@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entelechi Labs - About</title>
+    <title>Entelechi Labs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --custom-yellow: #facc15; /* A Tailwind-compatible yellow shade */
+        }
 
         body {
             background-color: #000000;
             color: #c9d1d9;
             scroll-behavior: smooth;
             background-image: radial-gradient(circle at 50% 50%, rgba(30, 30, 30, 0.5) 0%, rgba(0, 0, 0, 1) 70%);
+            overflow-y: hidden;
         }
 
         .font-serif-custom {
@@ -21,6 +26,15 @@
 
         .font-sans-custom {
             font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-spin-slow {
+            animation: spin 60s linear infinite;
         }
     </style>
 </head>
@@ -40,18 +54,22 @@
     <div class="max-w-screen-md mx-auto px-8 pt-0 flex flex-col gap-4">
         <div class="h-px w-full bg-gray-800"></div>
 
-        <section id="about" class="flex flex-col gap-8 py-24">
-            <h2 class="font-serif-custom text-3xl text-white">About Us</h2>
-            <div class="h-px w-full bg-gray-800"></div>
-            <div class="text-gray-400 text-lg">
-                <p class="mb-4">
-                    At Entelechi Labs, we believe the full potential of life sciences can only be unlocked by combining the power of machine learning with a deep understanding of biological systems. Our name, Entelechi, is a philosophical term for the complete realization of a thing's potential, a principle that guides all our work.
-                </p>
-                <p>
-                    We are a team of passionate scientists and engineers dedicated to transforming complex biological data into actionable insights for the future of medicine and research.
-                </p>
+        <section class="flex flex-col justify-center items-center text-center">
+            <div class="flex flex-col gap-4">
+                <img src="logo.png" alt="Entelechi Labs Logo" class="h-96 w-96 object-contain animate-spin-slow mx-auto mb-4">
+                <h1 class="font-serif-custom text-4xl sm:text-5xl text-white leading-tight">
+                    Engineering intelligence at the intersection of biology and computation.
+                </h1>
+                <div class="text-xl text-gray-400">
+                    We are an applied biological intelligence company.
+                </div>
             </div>
+            
+            <a href="mailto:contact@entelechilabs.com" class="mt-4 px-6 py-3 border-[var(--custom-yellow)] text-[var(--custom-yellow)] rounded-full hover:bg-[var(--custom-yellow)] hover:text-white transition-colors duration-200">
+                Get in Touch
+            </a>
         </section>
+
     </div>
 
     <div class="max-w-screen-md mx-auto p-8 pt-12 flex flex-col gap-4 text-sm mt-auto">
