@@ -21,19 +21,27 @@
         .font-sans-custom {
             font-family: 'Inter', sans-serif;
         }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-spin-slow {
+            animation: spin 60s linear infinite;
+        }
     </style>
 </head>
 <body class="font-sans-custom antialiased">
 
     <header class="max-w-screen-md mx-auto p-8 pt-12 flex justify-between items-start text-sm sticky top-0 bg-black z-50">
         <div class="flex items-center space-x-2">
-            <img src="logo.jpg" alt="Entelechi Labs Logo" class="h-8 w-8 object-contain">
+            <img src="logo.jpg" alt="Entelechi Labs Logo" class="h-8 w-8 object-contain animate-spin-slow">
             <div>Entelechi Labs</div>
         </div>
         <nav class="hidden sm:block">
             <ul class="flex space-x-6">
                 <li><a href="#about" class="hover:text-white transition-colors duration-200">About</a></li>
-                <li><a href="#services" class="hover:text-white transition-colors duration-200">Services</a></li>
                 <li><a href="mailto:contact@entelechilabs.com" class="hover:text-white transition-colors duration-200">Contact</a></li>
             </ul>
         </nav>
@@ -67,15 +75,6 @@
                 <p>
                     We are a team of passionate scientists and engineers dedicated to transforming complex biological data into actionable insights for the future of medicine and research.
                 </p>
-            </div>
-        </section>
-
-        <section id="services" class="flex flex-col gap-8 py-24">
-            <h2 class="font-serif-custom text-3xl text-white">Our Services</h2>
-            <div class="h-px w-full bg-gray-800"></div>
-            <div class="text-gray-400 text-lg">
-                <p class="mb-4">
-                    We specialize in developing sophisticated algorithms and computational models to tackle some of the most challenging problems in genomics and epigenetics. 
             </div>
         </section>
     </div>
