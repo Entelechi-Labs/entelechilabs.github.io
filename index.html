@@ -8,13 +8,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
+        :root {
+            --custom-yellow: #facc15; /* A Tailwind-compatible yellow shade */
+        }
+
         body {
             background-color: #000000;
             color: #c9d1d9;
             scroll-behavior: smooth;
             background-image: radial-gradient(circle at 50% 50%, rgba(30, 30, 30, 0.5) 0%, rgba(0, 0, 0, 1) 70%);
-            /* Prevents vertical scrolling */
-            overflow-y: hidden; 
+            overflow-y: hidden;
         }
 
         .font-serif-custom {
@@ -62,7 +65,7 @@
                 </div>
             </div>
             
-            <a href="mailto:contact@entelechilabs.com" class="mt-4 px-6 py-3 border border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition-colors duration-200">
+            <a href="mailto:contact@entelechilabs.com" class="mt-4 px-6 py-3 border-[var(--custom-yellow)] text-[var(--custom-yellow)] rounded-full hover:bg-[var(--custom-yellow)] hover:text-white transition-colors duration-200">
                 Get in Touch
             </a>
         </section>
